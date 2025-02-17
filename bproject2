@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bushra Mehereen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f868b6;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Video Background Styling */
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Ensures video stays behind content */
+        }
+
+        h1 {
+            color: #008c00;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video muted loop autoplay playsinline preload="auto" class="bg-video" id="video">
+        <source src="bg/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>For Bushra</h1>
+    <img src="giphy.gif" alt="Cute GIF">
+
+    <h2>To That 7th Grade Crush</h2>
+
+    <a href="index%202.html">Page 2</a>
+
+    <p>Coded For One: BushraM</p>
+
+    <!-- Audio -->
+    <audio loop preload="auto" id="audio">
+        <source src="bg/g.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // Ensure audio starts when user interacts with the page
+        document.body.addEventListener("click", function() {
+            document.getElementById("audio").play();
+        }, { once: true }); // Runs only once
+    </script>
+
+</body>
+</html>
